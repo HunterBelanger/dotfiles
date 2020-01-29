@@ -26,8 +26,8 @@ let fortran_do_enddo=1
 syntax enable "For syntax highlighting
 
 " Indentation settings
-set tabstop=4 " Show tabs with 4 spaces
-set shiftwidth=4 " when indenting with '>' use 4 spaces
+set tabstop=2 " Show tabs with 4 spaces
+set shiftwidth=2 " when indenting with '>' use 4 spaces
 set expandtab " on pressing tab insert 4 spaces
 
 " Ensure UTF-8 encoding
