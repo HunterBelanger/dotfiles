@@ -1,6 +1,0 @@
-nnoremap w :view<cr>
-colorscheme lucius
-fileviewer *.jpg,*.jpeg,*.png
-           \ vifmimg draw %px %py %pw %ph %c
-           \ %pc
-           \ vifmimg clear

@@ -1,2 +1,2 @@
 # Hunter's Dotfiles
-Here are my personal dotfiles for system configureation. Use what you would like.
+Here are my personal dotfiles for system configuration. Use what you would like.
