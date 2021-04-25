@@ -28,3 +28,5 @@ export OPENMC_ENDF_DATA="$HOME/endf-b-vii.1"
 export GOPATH="$HOME/go"
 export PYTHONPATH="$HOME/lib64/python3.9/site-packages:$PYTHONPATH"
 export CHENILLE_XS_PATH="$HOME/data/ace_data/Lib80x"
+
+alias g="git"
