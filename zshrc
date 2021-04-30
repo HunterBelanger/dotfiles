@@ -22,11 +22,9 @@ export CPLUS_INCLUDE_PATH="$CPLUS_INCLUDE_PATH:$HOME/include"
 export CC=gcc
 export CXX=g++
 export FC=gfortran
-#export OPENMC_CROSS_SECTIONS="/home/hunter/data/openmc_data/endfb80_hdf5/cross_sections.xml"
-export OPENMC_CROSS_SECTIONS="$HOME/nndc_hdf5/cross_sections.xml"
-export OPENMC_ENDF_DATA="$HOME/endf-b-vii.1"
 export GOPATH="$HOME/go"
 export PYTHONPATH="$HOME/lib64/python3.9/site-packages:$PYTHONPATH"
+export OPENMC_CROSS_SECTIONS="/home/hunter/data/openmc_data/endfb80_hdf5/cross_sections.xml"
 export CHENILLE_XS_PATH="$HOME/data/ace_data/Lib80x"
 
 alias g="git"

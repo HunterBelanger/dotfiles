@@ -5,6 +5,11 @@ source src/install_essentials.sh
 source src/setup_vim.sh
 source src/setup_alacritty.sh
 source src/setup_zsh.sh
+source src/setup_fonts.sh
+
+# Get fonts
+printf "\nGrabbing nerd fonts...\n"
+setup_fonts
 
 # Setup vim
 printf "\nSetting up vim...\n"
