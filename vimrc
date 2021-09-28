@@ -38,7 +38,7 @@ let g:TagHighlightSettings['TagFileName'] = 'tags'
 let g:TagHighlightSettings['CtagsExecutable'] = 'ctags'
 
 " YCM Config file
-let g:ycm_global_ycm_extra_conf = "~/.vim/ycm_extra_conf.py"
+"let g:ycm_global_ycm_extra_conf = "~/.vim/ycm_extra_conf.py"
 
 let g:cpp_class_scope_highlight = 1
 let g:cpp_clas_decl_highlight = 1
@@ -77,6 +77,9 @@ set shiftwidth=2 " when indenting with '>' use 2 spaces
 set softtabstop=2
 set expandtab " on pressing tab insert 2 spaces
 filetype plugin indent on
+
+" Fixes background issues with Kitty terminal emulator
+let &t_ut=''
 
 " Needed to keep 2 space indentation on python files
 autocmd FileType python setlocal shiftwidth=2 tabstop=2 softtabstop=2 expandtab

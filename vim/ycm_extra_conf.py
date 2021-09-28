@@ -204,3 +204,28 @@ def FlagsForFile(filename):
             'do_cache': True
             }
 
+# Replaces FlagsForFile
+def Settings(filename):
+    root = os.path.realpath(filename);
+    compilation_db_flags = FlagsForCompilationDatabase(root, filename)
+    if compilation_db_flags:
+        final_flags = compilation_db_flags
+    else:
+        if IsSourceFile(filename):
+            extension = os.path.splitext(filename)[1]
+            if extension in C_SOURCE_EXTENSIONS:
+                final_flags = C_BASE_FLAGS
+            else:
+                final_flags = CPP_BASE_FLAGS
+
+        clang_flags = FlagsForClangComplete(root)
+        if clang_flags:
+            final_flags = final_flags + clang_flags
+        include_flags = FlagsForInclude(root)
+        if include_flags:
+            final_flags = final_flags + include_flags
+    return {
+            'flags': final_flags,
+            'do_cache': True
+            }
+
