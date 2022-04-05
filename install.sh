@@ -6,6 +6,7 @@ source src/setup_vim.sh
 source src/setup_alacritty.sh
 source src/setup_zsh.sh
 source src/setup_fonts.sh
+source srs/setup_sway.sh
 
 # Get fonts
 printf "\nGrabbing nerd fonts...\n"
@@ -22,3 +23,7 @@ setup_alacritty
 # Setup zsh
 printf "\nSetting up zsh...\n"
 setup_zsh
+
+# Setup Sway
+printf "\nSetting up sway...\n"
+setup_sway
